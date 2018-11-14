@@ -167,4 +167,11 @@ Here's a [link to my video result](./project_video_result.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-My pipeline failed on the harder_challenge_video.mp4. Since there's no much time left for me and I have one more project to finish )-: I'll go back here after finishing the other project.
+My pipeline failed on the harder_challenge_video.mp4. Since there's no much time left for me and I have one more project to finish :-( I'll go back here after finishing the other project.
+
+Based on the result from the harder_challenge_video, it seems like my pipeline fails on contiously sharp turns.
+
+One thing I can think of is that I could use higher order polynmial to get lane lines. This method may solve the issue of the sharp turns.
+
+Also, I could do some smoothing of the output because as I checked the video output, it seems like there's some update delay of the output. Maybe I can apply what I implemented in the first project of the smoothing with history. That might help the output be smoother.
+
